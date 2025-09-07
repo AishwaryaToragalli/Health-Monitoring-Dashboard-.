@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Monitoring Dashboard</title>
+  <link rel="icon" href="heart.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Health Monitor</h1>
+    <button id="theme-toggle">&#x1F319;</button>
+  </header>
+
+
+  <section class="dashboard">
+    <div class="card">
+      <h2>Heart Rate</h2>
+      <canvas id="heartChart"></canvas>
+    </div>
+    <div class="card">
+      <h2>Blood Pressure</h2>
+      <canvas id="bpChart"></canvas>
+    </div>
+    <div class="card">
+      <h2>Oxygen Level</h2>
+      <canvas id="oxygenChart"></canvas>
+    </div>
+  </section>
+
+
+  <section class="contact">
+    <h2>Contact Doctor</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-msg"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Health Monitoring | Powered by HTML, CSS & JS</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="hello.js"></script>
+</body>
+</html>
